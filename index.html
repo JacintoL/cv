@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacinto Lopes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="logosite.png" type="png">
+</head>
+<body>
+    <header class="hero">
+        <div class="navbar">
+            <div class="logo">
+                <h2>Jacinto Lopes</h2>
+            </div>
+               <!-- Botão de menu hamburguer -->
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Links de navegação -->
+                <div class="nav-links" id="nav-links">
+                    <a href="#about" class="btn">About me</a>
+                    <a href="#projects" class="btn">My Projects</a>
+                    <a href="#certifications" class="btn">Certifications</a>
+                    <a href="#skills" class="btn">Skills</a>
+                    <a href="#professional-experience" class="btn">Experience</a>
+                    <a href="#Education" class="btn">Education</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="container hero-content">
+            <h1>Jacinto Lopes</h1>
+            <p>Cybersecurity Enthusiast | Computer Science Engineering </p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <img src="jl.png" alt="Jacinto Lopes">
+                <div class="about-text">
+                    <h2>About me</h2>
+                    <p>Hello!</p>
+                    <p>I am organized and punctual, with a strong teamwork ethic. Additionally, I am committed to maintaining a collaborative and positive work environment where everyone can work together to achieve common goals. I am highly motivated and always willing to learn new things. I am always looking for opportunities to expand my knowledge and skills in different areas.</p>
+                    <p>I am a cybersecurity enthusiast with expertise in vulnerability management, automation with PowerShell, and network security. My passion is in building secure systems using automated tools to detect and remediate vulnerabilities in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h3>My Recent Projects</h3>
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <a href="https://github.com/JacintoL/SIEM-Azure-Sentinel-MAP-with-LIVE-CYBER-ATTACKS" class="project-card" target="_blank">
+                    <img src="Azure-Sentinel.png" alt="Azure Sentinel Cyber Attack Map" class="project-image">
+                    <h3>Azure Sentinel (SIEM)</h3>
+                    <p>SIEM - Azure Sentinel Map with Live Cyber Attacks!</p>
+                    <p>Used a custom PowerShell script to extract metadata from Windows Event Viewer to be forwarded to a third-party API to derive geolocation data.</p>
+                    <p>Configured Log Analytics Workspace in Azure to ingest custom logs containing geographic information (latitude, longitude, state/province, and country).</p>
+                    <p>Configured custom fields in Log Analytics Workspace with the intent of mapping geo data in Azure Sentinel.</p>
+                    <p>Set up Azure Sentinel (Microsoft's cloud SIEM) workbook to display global attack data (RDP brute force) on a world map according to physical location and magnitude of attacks.</p>
+                </a>
+                
+                <a href="https://github.com/JacintoL/" class="project-card" target="_blank">
+                    <img src="EDR.png" alt="Active Directory Automation" class="project-image">
+                    <h3>EDR Home Lab: Attack and Defense </h3>
+                    <p>This lab is dedicated to simulating a real cyber attack and endpoint detection and response. Utilizing Eric Capuano's guide online, I will be using virtual machines to simulate the threat & victim machines. The attack machine will utilize 'Sliver' as a C2 framework to attack a Windows endpoint machine, which will be running 'LimaCharlie' as an EDR solution.</p>
+                    
+                </a>
+                
+                <a href="https://github.com/JacintoL/Vulnerability-Management-with-Nessus-Essentials" class="project-card" target="_blank">
+                    <img src="nessus-image.png" alt="Nessus Vulnerability Scanning" class="project-image">
+                    <h3>Nessus Vulnerability Scanning</h3>
+                    <p>I developed content, as well as performed the following tasks:</p>
+                    <ul>
+                        <li>Installed and configured Nessus Essentials to perform credentialed vulnerability scans against Windows 10 Hosts.</li>
+                        <li>Implemented a Vulnerability Management Function on sandbox networks:</li>
+                        <ul>
+                            <li>Discover</li>
+                            <li>Prioritize</li>
+                            <li>Assess</li>
+                            <li>Report</li>
+                            <li>Remediate</li>
+                            <li>Verify</li>
+                        </ul>
+                        <li>Conducted vulnerability assessments with Nessus; remediated vulnerabilities.</li>
+                        <li>Developed an automated remediation process to preemptively deal with vulnerabilities stemming from Windows updates and third-party software.</li>
+                    </ul>
+                </a>
+                
+                <a href="https://github.com/JacintoL/ActiveDirectoryLab" class="project-card" target="_blank">
+                    <img src="active-directory-image.png" alt="Active Directory Automation" class="project-image">
+                    <h3>Basic Home Lab Running Active Directory</h3>
+                    <p>Active Directory Administration on Server 2019:</p>
+                    <p>- PowerShell automation to provision, maintain, and deprovision user accounts.</p>
+                    <p>This project involved setting up a home lab to manage user accounts effectively.</p>
+                </a>
+                
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <img src="palo-alto.png" alt="Palo Alto Networks" class="cert-logo"> <!-- Adjusted logo path -->
+                    <p>Cybersecurity Foundation Student Certificate</p>
+                </div>
+                <div class="cert-card">
+                    <img src="palo-alto.png" alt="Palo Alto Networks" class="cert-logo"> <!-- Adjusted logo path -->
+                    <p>Enterprise Security Management</p>
+                </div>
+                <div class="cert-card">
+                    <img src="ics2.png" alt="ISC2" class="cert-logo"> <!-- Adjusted logo path -->
+                    <p>ISC2 Certified in Cybersecurity (in progress)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="technical-skills">
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Networking Basics:</strong> TCP/IP, UDP, DNS, DHCP</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Security Fundamentals:</strong> Cryptography, Firewalls, SSL/TLS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>SIEM Tools:</strong> Azure Sentinel (Monitoring and Incident Response)</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Vulnerability Management:</strong> Nessus Essentials (Vulnerability Assessment and Remediation)</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Log Analysis:</strong> Custom Log Ingestion and Analysis (Azure Log Analytics)</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Scripting & Automation:</strong> PowerShell (Security Task Automation)</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Programming:</strong> Basic knowledge of Python</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Operating Systems:</strong> Windows, Linux</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Virtualization Tools:</strong> VirtualBox, VMware, Hyper-V</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Security Tools:</strong> Wireshark, Nessus, NMAP (basic understanding)</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong>Standards and Frameworks: :</strong>  ISO 27001</span>
+                </div>
+                <div class="skill-item">
+                    <img src="verificado.png" alt="check" class="check-icon">
+                    <span><strong> Cybersecurity Attacks:</strong> SQL Injection, Cross-Site Scripting (XSS), CSRF, Phishing, Man-in-the
+                        Middle (MitM), DDoS</span>
+                </div>
+            </div>
+        </div>
+        <div class="soft-skills-languages">
+            <div class="soft-skills">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Creative Mind</li>
+                    <li>Teamwork</li>
+                    <li>Adaptability</li>
+                    <li>Responsibility</li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English (C1)</li>
+                    <li>Portuguese (Native)</li>
+                    <li>French (B1)</li>
+                    <li> Spanish (A2)</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="professional-experience" class="professional-experience">
+    <div class="container">
+        <h2>Experience</h2>
+        
+        <div class="professional-experience">
+            <!-- ISOBAR Internship -->
+            <div class="experience-item">
+                <a href="https://www.isobar.com" target="_blank" class="company-link">
+                    <img src="isobar.jpg" alt="Isobar Logo" class="company-logo">
+                </a>
+                <div class="experience-details">
+                    <p><strong> Software Developer - Internship</strong><br>
+                    Isobar Switzerland <br>
+                    January 2020 - March 2020 - 3 months<br>
+                    Guarda, Portugal - In Person</p>
+                    <p>During my internship at ISOBAR, I was proposed the project “Coffee Order Management”. Implemented a Salesforce system to manage types of coffee, users, and orders, providing management efficiency. I highlight the automation of email notifications for order status changes and the creation of detailed reports. I developed a distribution package to facilitate implementation. The experience improved my skills in Salesforce and data structures.</p>
+                </div>
+            </div>
+
+            <!-- J.5 F. Soluções Informáticas Internship -->
+            <div class="experience-item">
+                <a href="https://www.j5f.pt" target="_blank" class="company-link">
+                    <img src="J5F.png" alt="J.5 F. Soluções Informáticas Logo" class="company-logo">
+                </a>
+                <div class="experience-details">
+                    <p><strong>IT Support Specialist - Internship </strong><br>
+                    J.5 F. Soluções Informáticas<br>
+                    May 2019 - July 2019 - 3 months<br>
+                    Viseu, Portugal - In Person</p>
+                    <p>I completed an internship focusing mainly on computer parts and hardware maintenance. I performed activities such as replacing defective components, diagnosing and solving hardware-related problems. Responsible for installing and configuring the Windows operating system on corporate computers and certain applications requested by customers. Preparation of computers for business use, ensuring the efficiency and safety of the equipment. Worked closely with other team members to implement changes, share knowledge, and ensure a transition to new procedures.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="Education" class="professional-experience">
+    <div class="container">
+        <h2>Education</h2>
+        
+        <div class="professional-experience">
+            <!-- IPCB -->
+            <div class="experience-item">
+                <a href="https://www.linkedin.com/school/politecnico-castelo-branco/" target="_blank" class="company-link">
+                    <img src="ipcb.jpg" alt="Isobar Logo" class="company-logo">
+                </a>
+                <div class="experience-details">
+                    <p><strong> Degree in Computer Science Engineering </strong><br>
+                        Polytechnic Institute of Castelo Branco <br>
+                    2020 - 2024 <br>
+                    </p>
+                    <p>For my course completion project, I am developing a solution to automate the registration process
+                        for Higher Professional Technical Competitions (CTeSP). The platform I am creating allows the
+                        submission and validation of documents, the automatic completion of sorting grids and the
+                        generation of lists of candidates based on defined criteria. My responsibilities included analyzing
+                        articles to identify the best approach for developing and implementing the entire application</p>
+                </div>
+            </div>
+
+            <!-- TRANCOSO -->
+            <div class="experience-item">
+                <a href="https://ept.pt/" target="_blank" class="company-link">
+                    <img src="EPT.png" alt="EPT" class="company-logo">
+                </a>
+                <div class="experience-details">
+                    <p><strong> IT Equipment Management Technician</strong><br>
+                        Trancoso Vocational School<br>
+                    2017 - 2020<br>
+                   </p>
+                    <p>
+                       During these years, I acquired basic knowledge in Networks, C programming language where I developed the Mastermind game, concepts of Fundamental Electronics, Installation and Maintenance of Computer Equipment, Digital Systems and Computer Architecture, and Data Communication.
+                       
+                       During my internships, I had experiences at Isobar Switzerland and J5F
+                       
+                       In addition to the Professional Aptitude Test, in the final course project I developed a mobile robot for fighting fires. Using the Arduino IDE, I created an autonomous navigation system that combines a rangefinder sensor and odometry, allowing the exploration of unknown environments and the mechanical extinguishing of fires. I also implemented flame detection and extinguishing systems, including a fan driven by the flame sensor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        
+        <!-- Flexbox container para lado a lado -->
+        <div class="contact-content">
+            <!-- Formulário de contato -->
+            <form action="mailto:jacintocostalopes@hotmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Enter the subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <!-- Links de Redes Sociais -->
+            <div class="social-links">
+                <h3>Connect with me:</h3>
+                <div class="social-group">
+                    <!-- LinkedIn e GitHub lado a lado -->
+                    <a href="https://www.linkedin.com/in/jacinto-lopes/" target="_blank" class="social-icon">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/JacintoL" target="_blank" class="social-icon">
+                        <img src="github.png" alt="GitHub">
+                    </a>
+                </div>
+                <div class="social-group">
+                    <!-- Facebook e Instagram embaixo -->
+                    <a href="https://facebook.com/seu-facebook" target="_blank" class="social-icon">
+                        <img src="facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://instagram.com/seu-instagram" target="_blank" class="social-icon">
+                        <img src="insta.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+   
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Jacinto Lopes </p>
+    </footer>
+</body>
+</html>
